@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C/C++ Tester</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="menu">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">C/C++ Tester</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/dodaj">Upload File</a></li>           
+            <li><a href="/kont">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+</div>
+
+<div id="contact-form">
+  <h4>Contact</h4>
+  <form id="contact-form">
+    <div>
+      <label for="contact-name">Name:</label>
+      <br>
+      <input type="text" id="contact-name" name="contact-name" class="form-control">
+    </div>
+    <div>
+      <label for="contact-email">Email:</label>
+      <br>
+      <input type="text" id="contact-email" name="contact-email" class="form-control">
+    </div>
+    <div>
+      <label for="contact-message">Message:</label>
+      <br>
+      <textarea name="contact-message" id="contact-message" rows="5" class="form-control"></textarea>
+    </div>
+  </form>
+  <br>
+  <button type="submit" class="btn btn-primary" id="confirm-btn">Confirm</button>
+</div>
+    
+
+<footer class="fixed-bottom">
+<p>C/C++ Tester 2021</p>
+</footer>
+
+
+
+</body>
+</html>
